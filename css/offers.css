@@ -1,3 +1,12 @@
+.offers-cards {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 24px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 .card {
     color: var(--text-secondary-color);
     width: 312px;
@@ -48,9 +57,16 @@
     background: url(../img/bg-cards-manaus.jpg) no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+    .offers-cards {
+    flex-direction:row;
+    }
+
+}
+
 @media screen and (min-width: 1024px) {
     .card {
-        width:588px;
+        width: 420px;
         height: 308px;
     }
     .card header h3 {
@@ -60,4 +76,17 @@
     .card header span{
     font-size: 40px;
 }
+}
+
+@media screen and (min-width: 1440px) {
+    .card {
+        width: 588px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .offers-cards{
+        width: 1250px;
+        margin: 0 auto;
+    }
 }
